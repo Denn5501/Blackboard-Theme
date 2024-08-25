@@ -28,6 +28,7 @@ TBA
 - Improve compatability with other browsers and media screens
 - Create a website index where multiple themes are gathered
 - Fix a lot lot lot of :bug: bugs
+- Add more themes :sweat_smile: :heart:
 ## Disclaimer
 > [!NOTE]
 > The author of this project make no warranties about the software and are not liable for any issues or damages resulting from its use.
