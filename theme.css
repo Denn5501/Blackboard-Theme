@@ -1,0 +1,761 @@
+@-moz-document domain("umindanao.blackboard.com") {
+/* ==UserStyle==
+@name         UMin BBL: Dark Theme
+@author       github.com/kvnmcn
+@description  Alternative theme for Blackboard, Theme colors based on enkia Tokyo Night theme on Visual Studio Code https://github.com/enkia/tokyo-night-vscode-theme 
+@version      1.0.0
+@namespace    https://github.com/kvnmcn
+ ==/UserStyle== */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+
+body {
+    font-family: Inter !important;
+    color: #a9b1d6 !important;
+}
+
+p {
+    color: #a9b1d6;
+}
+
+div {
+    font-family: Inter !important;
+    color: #a9b1d6;
+}
+
+label {
+    color: #a9b1d6;
+}
+
+bb-svg-icon {
+    color: #a9b1d6;
+}
+
+.base #main-content {
+    background-color: #1a1b26;
+}
+
+/* Removes assist tab in sidebar */
+/* bb-portal-host {
+ display: none;
+ } */
+ 
+/* Alter any input text theme */
+input[type="text"] {
+    background-color: #2c2e40;
+    color: #767676;
+}
+/* 
+ =============
+     Media 
+ =============
+ */
+@media screen and (max-width: 63.9375em) {
+    .color-selection-live-mode.themed-background-primary-medium-down {
+        background-color: #16161e !important;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+
+    .color-selection-live-mode.themed-background-primary-medium-down,
+    .color-selection-live-mode .themed-background-primary-medium-down,
+    .color-selection-live-mode .themed-background-primary-medium-down bb-svg-icon,
+    .color-selection-live-mode.themed-background-primary-medium-down bb-svg-icon,
+    .color-selection-live-mode .themed-background-primary-medium-down button,
+    .color-selection-live-mode.themed-background-primary-medium-down button {
+        background-color: #16161e !important;
+        color: rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+/*
+ ================
+     Messages
+ ================
+ */
+.messages-container-summary .flex-container {
+    background-color: #2c2e40;
+}
+
+.messages-container-summary .messages-header .title a {
+    color: #a9b1d6;
+}
+
+.messages-container-summary {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/*
+ ====================
+     Sidebar Menu
+ ====================
+ */
+
+/* Assist tab sidebar */
+.base #side-menu .off-canvas-list .base-navigation-button .integration-navigation-button-content {
+    background-color: #16161e;
+}
+
+.base #side-menu .off-canvas-list .base-navigation-button .integration-navigation-button-content:hover {
+    background-color: #1e202e;
+    border-radius: 0px 12px 12px 0px;
+}
+
+/* Remove "New" Sticker on Assist tab */
+span[style="margin-left: 10px; border-radius: 8px; background-color: rgb(4, 107, 241); padding: 2px 8px; font-size: smaller; font-weight: bold; display: inline-block;"] {
+    display: none !important;
+}
+
+/* Sidebar Colors */
+.base #side-menu,
+.base .color-selection-preview-mode {
+    overflow: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0.25) #16161e;
+    scrollbar-width: thin;
+}
+
+a.MuiButtonBaseroot-0-2-199.MuiButtonroot-0-2-170.MuiButtoncontained-0-2-178.integration-navigation-button-content.themed-background-primary-alt-fill-only.theme-border-left-active.MuiButtoncontainedPrimary-0-2-179.MuiButtondisableElevation-0-2-181 {
+    display: none;
+}
+
+.base #side-menu,
+.base .color-selection-preview-mode {
+    background-color: #16161e;
+}
+
+.base #side-menu .bb-inner-wrap>header,
+.base .color-selection-preview-mode .bb-inner-wrap>header {
+    background-color: #16161e;
+    border-bottom: none;
+    box-shadow: none;
+    padding-top: 1rem;
+}
+
+.color-selection-live-mode .themed-background-primary,
+.color-selection-live-mode .bb-close,
+.color-selection-live-mode .bb-offcanvas-panel .bb-close,
+.color-selection-live-mode .active .base-navigation-button-content,
+.color-selection-live-mode .active .integration-navigation-button-content {
+    background-color: #2c2e40 !important;
+    color: #cfc9c2 !important;
+}
+
+.base #side-menu .off-canvas-list .base-navigation-button .base-navigation-button-content {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.base #side-menu .off-canvas-list .base-navigation-button .base-navigation-button-content:hover {
+    background-color: #1e202e;
+}
+
+/* === School Logo === */
+a img {
+    border: white solid;
+    border-radius: 15px;
+    border-width: 10px;
+    transition: box-shadow 0.8s ease-in-out 0.4s;
+    /* Slower fade-out transition */
+}
+
+a img:hover {
+    box-shadow: 0 0 10px #fc0d23;
+}
+
+/* 
+ ========================
+     Institution Page
+ ========================
+ */
+.modules-container {
+    background-color: #1a1b26;
+}
+
+.module-wrapper__title {
+    color: #a9b1d6;
+}
+
+.content-component__container {
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.25);
+    overflow: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0.25) #16161e;
+    scrollbar-width: thin;
+}
+
+/* text color inside the box is defined in p and div */
+.link-list-component.link-list-image-right {
+    border: 0;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.link-list-component__link.-black {
+    color: #a9b1d6;
+}
+
+.link-list-component__link {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+/* 
+ ===============
+     Profile
+ ===============
+ */
+.base #body-content {
+    background-color: #1a1b26;
+}
+
+.base-profile .profile-content .user-information section ul {
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.base-profile .profile-content .user-information section ul .data-row .data-container .data-value {
+    color: #a9b1d6;
+}
+
+.base-profile .profile-content .user-information section ul .data-row:not(:first-child):not(.multiple-row-data) {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.base-profile .profile-content .user-information {
+    border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.base-profile .profile-content .user-information section ul .data-row {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* === System Settings === */
+.base-profile .profile-content .user-settings section ul .data-row.can-edit {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.base-profile .profile-content .user-settings section ul {
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.base-profile .profile-content .user-settings section ul .data-row:not(:first-child):not(.multiple-row-data) {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.base-profile .profile-content .user-settings section ul .data-row .data-container .data-value {
+    color: #a9b1d6;
+}
+
+/* 
+ ===============
+     Courses
+ ===============
+ */
+/* Hide Courses Header */
+.base-courses-header-container {
+    display: none;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #a9b1d6;
+}
+
+h1 {
+    font-family: "Lora", sans-serif;
+}
+
+/* Upcoming Courses Card  */
+.base-courses .upcoming-term .course-element-card {
+    background-color: #1e202e;
+}
+
+.base #side-menu .off-canvas-list .base-navigation-button .base-navigation-button-content,
+.base #side-menu .off-canvas-list .base-navigation-button .integration-navigation-button-content,
+.base #side-menu .off-canvas-list .base-navigation-button .integration-navigation-button-content-v2,
+.base .color-selection-preview-mode .off-canvas-list .base-navigation-button .base-navigation-button-content,
+.base .color-selection-preview-mode .off-canvas-list .base-navigation-button .integration-navigation-button-content,
+.base .color-selection-preview-mode .off-canvas-list .base-navigation-button .integration-navigation-button-content-v2 {
+    color: #a9b1d6;
+    font-family: "Inter";
+    font-weight: 400;
+    transition: color 250ms, background-color 250ms;
+}
+
+.base-courses {
+    background-color: #1a1b26;
+}
+
+.base-courses .term-navigator {
+    background-color: #16161e;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05), 0 3px 0 0 #73daca;
+}
+
+/* Courses Heading */
+.base-courses .term-navigator .sibling-term span {
+    color: #a9b1d6;
+}
+
+.base-courses .term-navigator div.active-term span {
+    color: #a9b1d6;
+}
+
+.base-courses .select-value::after {
+    border-top-color: #a9b1d6;
+}
+
+h2.semester.active-term span {
+    color: #a9b1d6;
+    font-size: 1.5rem;
+}
+
+bb-search-box>div>input[type="text"] {
+    background: #2c2e40;
+    border-radius: 12px;
+    border: 0;
+}
+
+.base-courses .select-wrapper {
+    background-color: #2c2e40;
+    border: 0;
+    border-radius: 12px;
+}
+
+.select-wrapper .select-value {
+    color: #767676;
+}
+
+[class*="makeStylespageDropdownButton-0-2-"] {
+    border: 0;
+    border-radius: 12px;
+    background-color: #2c2e40;
+    color: #767676;
+}
+
+[class*="makeStylespageDropdownButton-0-2-"]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.square-toggle {
+    border: 0;
+    border-radius: 5px;
+    background-color: #a9b1d6;
+}
+
+.square-toggle label {
+    background-color: rgba(0, 255, 215, 0.1);
+}
+
+/* Courses Card */
+.base-courses .element-card {
+    background-color: #1e202e;
+    border-radius: 28px;
+    border: 0px solid #1f2230;
+    color: #a9b1d6;
+    overflow: hidden;
+}
+/* Search courses, terms, and filters */
+[class*="MuiOutlinedInputroot-0-2-"] {
+    border: 0;
+    border-radius: 12px;
+    background-color: #2c2e40;
+    color: #767676;
+}
+
+/* Glow effect on Card hover */
+/* .base-courses .multi-column-view .course-org-list .default-group .element-card.highlight:hover {
+ box-shadow: 0 7px 10px 1px rgba(2, 250, 211, 0.6);
+ } */
+
+.base-courses .course-columns.list-column-view .element-card .element-details .status-bar {
+    color: #c8682e;
+}
+
+/* Activity Stream*/
+div.base-recent-activity {
+    background-color: #1a1b26;
+}
+
+.base-header {
+    background-color: #16161e;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05), 0 3px 0 0 #73daca;
+}
+
+.base-header .select-wrapper {
+    border: 0;
+    border-radius: 12px;
+    background-color: #2c2e40;
+    color: #767676;
+}
+
+.base-header .page-title {
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-style: normal;
+    color: #a9b1d6;
+}
+
+/* Activity Card */
+.base-recent-activity .activity-stream .activity-group .stream-item .element-details .context a {
+    color: #a9b1d6;
+    font-weight: 600;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.base-recent-activity .activity-stream .activity-group .stream-item .element-details .context:hover a {
+    text-decoration: underline;
+    text-shadow: 0 0 10px #73daca;
+}
+
+.base-recent-activity .activity-stream .activity-group .stream-item:hover::before {
+    opacity: 0.5;
+    background-color: #2c2e40;
+}
+
+/* Card popup hover right side  */
+/* span.enhanced-tooltip[aria-hidden="false"]  */
+span.enhanced-tooltip {
+    border: 0;
+    border-radius: 12px;
+    background-color: #16161e;
+    color: #a9b1d6;
+}
+
+span.enhanced-tooltip-pip.right-top {
+    display: none;
+}
+
+/* View grade button */
+.base-recent-activity .activity-stream .activity-group .stream-grade-controls button {
+    background-color: #2c2e40;
+    border-radius: 8px;
+    color: rgba(115, 218, 202, 0.5);
+}
+
+/* View grade button: focus */
+.button--secondary:focus {
+    background-color: #2c2e40 !important;
+}
+
+/* Book svg */
+.base-recent-activity .activity-stream .activity-group .stream-item .element-image {
+    position: relative;
+    background-color: #16161e;
+    border-radius: 4px;
+}
+
+/* New Course */
+.activity-stream .activity-group .stream-item .element-details .name {
+    color: hsla(229, 35%, 75%, 0.3);
+}
+
+/* Assignments, Tasks, Grade, Feedback */
+.element-card .element-details .name a {
+    color: hsla(229, 35%, 75%, 0.3);
+}
+
+/* Book svg hover */
+.base-recent-activity .activity-stream .activity-group .stream-item:hover .element-image {
+    background-color: #16161e;
+}
+
+/*
+ =============
+     Panel
+ =============
+ */
+
+.assessment-overview .panel-content {
+    background-color: #0f0f14;
+}
+
+.panel-header.persistent-white-header {
+    background-color: #16161e;
+    border: 0;
+}
+
+.panel-header.persistent-white-header .panel-title {
+    background-color: #16161e;
+    color: #a9b1d6 !important;
+}
+
+.panel-content-info.assessment-summary ul.assessment-features {
+    padding: 1rem;
+    border: 1px solid rgba(169, 177, 214, 0.5);
+    border-radius: 12px;
+}
+
+.panel-content-info.assessment-summary ul.assessment-features>li>div {
+    border-bottom-color: rgba(169, 177, 214, 0.5);
+}
+
+.panel-content-info.assessment-summary .settings-link {
+    color: rgba(169, 177, 214, 0.3);
+}
+
+.tests .no-submission-card {
+    background-color: #0b0b0f;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tests .no-submission-card:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.peek .tests footer {
+    background-color: #16161e;
+    border: 0;
+}
+
+/*
+ ==================
+     Assessment
+ ==================
+ */
+
+.assessment-attempt .assessment-progress-header {
+    background-color: #16161e;
+    padding: 1rem;
+    padding-top: 1rem;
+    border: 0;
+    border-radius: 12px;
+}
+
+svg.svg-icon.active {
+    color: #73daca;
+}
+
+[bb-timed-test-indicator] [bb-timed-test-indicator-label] .label-timed-indicator span {
+    color: #a9b1d6;
+}
+
+.tests .question-header .question-label {
+    color: #a9b1d6;
+}
+
+.bb-editor-root .ql-container {
+    color: #a9b1d6;
+    border-radius: 8px;
+    background-color: #16161e;
+    border: 0;
+}
+
+.panel-footer {
+    border: 0;
+    background-color: #16161e;
+}
+
+/* Questions Filter button */
+[class*="makeStylesfilterButton-0-2-"] {
+    background-color: #2c2e40;
+    color: #767676;
+    border-radius: 12px;
+    border: 0;
+}
+
+[class*="makeStylesfilterButton-0-2-"]:hover {
+    background-color: rgba(44, 46, 64, 0.5);
+    color: rgba(118, 118, 118, 0.5);
+    border-radius: 12px;
+    border: 0;
+}
+
+/*
+ ========================
+     Active Container
+ ========================
+ */
+/* Border container */
+.bb-offcanvas-panel.with-banner .side-panel-content {
+    border-radius: 12px 0px 0px 12px;
+}
+
+.bb-offcanvas-right.active>.bb-offcanvas-panel-wrap {
+    border-radius: 12px 0px 0px 12px;
+    background-color: #0f0f14;
+}
+
+@media only screen and (max-width: 39.9375em) {
+    .bb-offcanvas-panel.with-banner .side-panel-content {
+        border-radius: 0px;
+    }
+
+    .bb-offcanvas-right.active>.bb-offcanvas-panel-wrap {
+        border-radius: 0px;
+    }
+}
+
+.element-card .element-details .name {
+    color: #a9b1d6;
+}
+
+/* Heading */
+
+div[class^="makeStylesroot-0-2-"] {
+    border-bottom: transparent;
+}
+
+[class*="makeStylesroot-0-2-"]:hover {
+    border-color: #a9b1d6;
+}
+
+[class^="makeStylesprogressBarClass-0-2-"] {
+    border: 0;
+}
+
+div[class^="makeStylespanelHeaderContainerRoot-0-2-"] {
+    background-color: #16161e;
+    border-bottom-color: transparent;
+}
+
+/* Side */
+[class*="makeStylesmainContainer-0-2"] {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+}
+
+.course-outline .details-actions-header {
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.course .outline-actions h2 {
+    padding-left: 1rem;
+}
+
+.course-outline .outline-column {
+    border-left-color: rgba(255, 255, 255, 0);
+}
+
+/* Faculty Name */
+div[class^="makeStylesusername-0-2-"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+span[class*="makeStylesroleBadge-0-2-"] {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*  */
+.courseConversion.course .course-content-container {
+    background-color: #0f0f14;
+}
+
+div[class^="makeStylesscrollArea-0-2-"] {
+    background-color: #16161e;
+}
+
+h1[class^="MuiTypographyroot-0-2-"] {
+    color: #a9b1d6;
+}
+
+header[class^="MuiBoxroot-0-2-"] {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 4px;
+    border-radius: 8px;
+}
+
+/* Space before "Course content" */
+.course .outline-column h2 {
+    padding-left: 1em;
+}
+
+div[class^="makeStylesemptyState-0-2-"] {
+    color: #a9b1d6;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+[class*="makeStylescontentItemTitle-0-2-"] {
+    color: #a9b1d6;
+}
+
+.bb-ui-navigation-list-horizontal [class*="makeStylesactive-0-2-"] {
+    border-color: #2ac3de;
+}
+
+/* Content Item */
+div[class*="makeStylesisOpen-0-2-"] {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0px 0px;
+}
+
+div[class*="makeStylescontentItem-0-2-"]:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px 8px 0px 0px;
+}
+
+div[class*="makeStylesheaderWithoutOverflow-0-2-"] {
+    margin-bottom: 1rem;
+}
+
+div[class*="makeStylesfolderContents-0-2-"] {
+    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1),
+        inset 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+div[class*="makeStylescontentItemComponent-0-2-"]:after {
+    border-top: 0.0625rem solid;
+    border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Course content icon color */
+[class*="MuiSvgIconcolorPrimary-0-2-"] {
+    color: #a9b1d6;
+}
+
+/* Close button */
+@media screen and (min-width: 40em) {
+
+    .bb-close,
+    .bb-offcanvas-panel .bb-close {
+        background-color: #e0af68 !important;
+        border: #b08951 !important;
+    }
+}
+
+button.bb-close::after {
+    border-color: transparent #b08951 transparent transparent !important;
+    top: 100% !important;
+    left: 0 !important;
+}
+
+.bb-close,
+.bb-offcanvas-panel .bb-close,
+.screen .bb-offcanvas-panel-wrap .bb-close {
+    -moz-text-fill-color: #0b0b0f;
+    -webkit-text-fill-color: #0b0b0f;
+    -moz-text-stroke-color: #0b0b0f;
+    -webkit-text-stroke-color: #0b0b0f;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 400 !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+.bb-close:hover,
+.bb-offcanvas-panel .bb-close:hover {
+    background-color: #d09f58 !important;
+}
+
+/*
+ =============
+     Media
+ =============
+ */
+/* Show Courses header on small screens */
+@media screen and (max-width: 39.9375em) {
+    .base-courses-header-container {
+        display: flex;
+    }
+}
+}
