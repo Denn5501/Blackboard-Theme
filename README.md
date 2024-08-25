@@ -6,6 +6,7 @@ This is a custom userstyle that will be used with [Stylus](https://github.com/op
 > The author welcomes contributions! Check [Contributing](#contributing)
 ## Features
 - Rounded corners
+- Option to remove "Assist" in the sidebar
 - Hover border outer glow
 - and many more... TBA
 ## Screenshots
