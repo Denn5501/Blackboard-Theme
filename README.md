@@ -1,7 +1,9 @@
 <div align=center><h1> Dark Blackboard Theme </h1></div>
 
 This is a custom userstyle that will be used with [Stylus](https://github.com/openstyles/stylus) extension. It is an alternative theme for Blackboard. The theme colors are based on [enkia Tokyo Night theme](https://github.com/enkia/tokyo-night-vscode-theme ) on Visual Studio Code.
-> 
+> [!WARNING]
+> This repository is still in development and may contain a significant number of bugs, incomplete features, or other issues. 
+> The author welcomes contributions! Check [Contributing](#contributing)
 ## Features
 - Rounded corners
 - Hover border outer glow
@@ -23,7 +25,11 @@ or manually install by copy pasting the [usercss](https://github.com/kvnmcn/Blac
 
 
 ## Contributing
-TBA
+1. Fork or download the repository
+2. Create your own branch
+3. Make your changes
+4. Submit a pull request: Open a pull request with a clear description of the changes and how they address the issues. Include any relevant details about what you’ve done and why.
+
 ## Future Plans
 - Improve compatability with other browsers and media screens
 - Create a website index where multiple themes are gathered
