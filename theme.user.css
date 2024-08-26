@@ -7,10 +7,10 @@
 @namespace    https://github.com/kvnmcn
  ==/UserStyle== */
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    font-family: Inter !important;
+    font-family: 'Inter', sans-serif !important;
     color: #a9b1d6 !important;
 }
 
@@ -19,7 +19,7 @@ p {
 }
 
 div {
-    font-family: Inter !important;
+    font-family: 'Inter', sans-serif !important;
     color: #a9b1d6;
 }
 
