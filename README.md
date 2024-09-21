@@ -1,20 +1,17 @@
 <div align=center><h1> Dark Blackboard Theme </h1></div>
 
 This is a userstyle that will be used with [Stylus](https://github.com/openstyles/stylus) extension. It is an alternative theme for Blackboard. The theme colors are based on [enkia Tokyo Night theme](https://github.com/enkia/tokyo-night-vscode-theme ) on Visual Studio Code. Made with :heart:.
+> [!IMPORTANT]
+> A recent update to Blackboard's UI for the Course container has impacted the functionality of this userstyle. Please be aware that some features may not work as intended until further adjustments are made.
+
 > [!WARNING]
 > This repository is still in development and may contain a significant number of bugs, incomplete features, or other issues. 
 > The author welcomes contributions! Check [Contributing](#contributing)
 ## Features
+- Dark mode
 - Rounded corners
 - Option to remove "Assist" in the sidebar
-- Hover border outer glow
-- and many more... TBA
-## Screenshots
-| Default Blackboard Theme | Dark Blackboard Theme |
-|--------|-------|
-| ![Institution Page](images/InstitutionPage.png) | ![Institution page](images/theme_InstitutionPage.png) |
-| ![Courses](images/Courses.jpg) | ![Courses](images/theme_Courses.jpg) |
-| ![Activity Stream](images/ActivityStream.jpg) | ![Activity Stream](images/theme_ActivityStream.jpg) |
+- *:eyes: hover over the University logo*
 
 ## Installation
 1. Install :art: **Stylus** extension for [Google Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
@@ -23,6 +20,13 @@ This is a userstyle that will be used with [Stylus](https://github.com/openstyle
 2. Install via Stylus (supports automatic updates)
 [![](https://img.shields.io/badge/Install_directly_with-Stylus-blue)](https://github.com/kvnmcn/Blackboard-Theme/raw/main/theme.user.css)
 or manually install by copy pasting the [usercss](https://github.com/kvnmcn/Blackboard-Theme/raw/main/theme.user.css)
+
+## Screenshots
+| Default Blackboard Theme | Dark Blackboard Theme |
+|--------|-------|
+| ![Institution Page](images/InstitutionPage.png) | ![Institution page](images/theme_InstitutionPage.png) |
+| ![Courses](images/Courses.jpg) | ![Courses](images/theme_Courses.jpg) |
+| ![Activity Stream](images/ActivityStream.jpg) | ![Activity Stream](images/theme_ActivityStream.jpg) |
 
 
 ## Contributing
@@ -34,7 +38,7 @@ or manually install by copy pasting the [usercss](https://github.com/kvnmcn/Blac
 ## Future Plans
 - Improve compatability with other browsers and media screens
 - Create a website index where multiple themes are gathered
-- Fix a lot lot lot of :bug: bugs
+- Improve Stylus integration
 - Add more themes :sweat_smile: :heart:
 ## Disclaimer
 > [!NOTE]
